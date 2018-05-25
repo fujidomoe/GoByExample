@@ -3,12 +3,17 @@ package main
 import (
 	"encoding/json"
 	"fmt"
+	"sort"
 )
 
 type Ext struct {
 	Ads []*Ad
 }
-type ExtV []Ad
+type ExtV []*Ad
+
+func (a ExtV) Len() int           { return len(a) }
+func (a ExtV) Less(i, j int) bool { return *a[i].Priority < *a[j].Priority }
+func (a ExtV) Swap(i, j int)      { a[i], a[j] = a[j], a[i] }
 
 type Ad struct {
 	VendorName *string `json:"vendor_name"`
@@ -24,33 +29,36 @@ func intPtr(i int32) *int32 {
 }
 
 func main() {
-
 	ad1 := &Ad{
 		VendorName: strPtr("softbank"),
-		Priority:   intPtr(1),
+		Priority:   intPtr(20),
 	}
 	ad2 := &Ad{
 		VendorName: strPtr("docomo"),
-		Priority:   intPtr(2),
+		Priority:   intPtr(40),
+	}
+	ad3 := &Ad{
+		VendorName: strPtr("au"),
+		Priority:   intPtr(30),
 	}
 
 	ext := &Ext{
-		Ads: []*Ad{ad1, ad2},
+		Ads: []*Ad{ad1, ad2, ad3},
 	}
 
-	x := ext.Filter(intPtr(2))
+	//ads := []*Ad{ad1, ad2, ad3}
 
+	x := ext.getOne()
 	bytes, _ := json.Marshal(x)
 	fmt.Printf("%s", bytes)
 }
 
-func (ext *Ext) Filter(i *int32) ExtV {
-	filtered := make(ExtV, 0)
-	for _, ad := range ext.Ads {
-		if *ad.Priority == *i {
-			filtered = append(filtered, *ad)
-			return filtered
-		}
-	}
-	return filtered
+// struct配列に対して、Priorityで昇順ソートして、0番目のstructにPriorityを振り直して返す
+func (x *Ext) getOne() *ExtV {
+	one := make(ExtV, 0)
+	sort.Sort(ExtV(x.Ads))
+	x.Ads[0].Priority = intPtr(1)
+	one = append(one, x.Ads[0])
+	return &one
+
 }
