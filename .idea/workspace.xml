@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c00f4644-2feb-4e0e-af10-fff326a40658" name="Default" comment="" />
+    <list default="true" id="c00f4644-2feb-4e0e-af10-fff326a40658" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,12 +19,24 @@
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="gists.go" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/100-mock/gists.go">
+            <entry file="file://$PROJECT_DIR$/101-mock-interface-example-dummydoer/gists.go">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="731">
-                  <caret line="43" column="29" lean-forward="false" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="29" />
+                <state relative-caret-position="357">
+                  <caret line="21" column="4" lean-forward="false" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
                   <folding>
-                    <element signature="e#18#79#0" expanded="true" />
+                    <element signature="e#46#107#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="gists_test.go" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/101-mock-interface-example-dummydoer/gists_test.go">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="170">
+                  <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+                  <folding>
+                    <element signature="e#46#85#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -33,12 +47,12 @@
       <split-second>
         <leaf>
           <file leaf-file-name="gists_test.go" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/100-mock/gists_test.go">
+            <entry file="file://$PROJECT_DIR$/101-mock-interface-example-dummydoer/gists_test.go">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="204">
-                  <caret line="12" column="14" lean-forward="false" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="14" />
+                <state relative-caret-position="425">
+                  <caret line="25" column="24" lean-forward="false" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
                   <folding>
-                    <element signature="e#18#56#0" expanded="true" />
+                    <element signature="e#46#85#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -74,10 +88,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/hello-world.go" />
-        <option value="$PROJECT_DIR$/values.go" />
-        <option value="$PROJECT_DIR$/variables.go" />
-        <option value="$PROJECT_DIR$/constant.go" />
         <option value="$PROJECT_DIR$/for.go" />
         <option value="$PROJECT_DIR$/if.go" />
         <option value="$PROJECT_DIR$/switch.go" />
@@ -125,6 +135,10 @@
         <option value="$PROJECT_DIR$/101-struct-grep.go" />
         <option value="$PROJECT_DIR$/100-mock/gists_test.go" />
         <option value="$PROJECT_DIR$/100-mock/gists.go" />
+        <option value="$PROJECT_DIR$/101-mock-interface/gists.go" />
+        <option value="$PROJECT_DIR$/101-mock-interface/gists_test.go" />
+        <option value="$PROJECT_DIR$/101-mock-interface-example-dummydoer/gists_test.go" />
+        <option value="$PROJECT_DIR$/101-mock-interface-example-dummydoer/gists.go" />
       </list>
     </option>
   </component>
@@ -184,6 +198,11 @@
               <item name="GoByExample" type="462c0819:PsiDirectoryNode" />
               <item name="100-mock" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="GoByExample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GoByExample" type="462c0819:PsiDirectoryNode" />
+              <item name="101-mock-interface-example-dummydoer" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -222,7 +241,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Go Test.TestGetGist2 in gists_test.go">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -252,6 +271,15 @@
       <filePath value="$PROJECT_DIR$" />
       <package value="github.com/sakura1116/GoByExample" />
       <directory value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="TestGetGist2 in gists_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true">
+      <module name="GoByExample" />
+      <working_directory value="$PROJECT_DIR$/101-mock-interface" />
+      <go_parameters value="-i" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="github.com/sakura1116/GoByExample/101-mock-interface" />
+      <pattern value="^TestGetGist2$" />
     </configuration>
     <configuration name="TestGetGists in gists_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true">
       <module name="GoByExample" />
@@ -330,9 +358,14 @@
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Go Test.TestGetGists in gists_test.go" />
+      <item index="1" class="java.lang.String" itemvalue="Go Test.TestGetGist2 in gists_test.go" />
+    </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Go Test.TestGetGists in gists_test.go" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Go Test.TestGetGist2 in gists_test.go" />
+        <item index="1" class="java.lang.String" itemvalue="Go Test.TestGetGists in gists_test.go" />
       </list>
     </recent_temporary>
   </component>
@@ -353,13 +386,13 @@
       <workItem from="1526263282071" duration="22620000" />
       <workItem from="1526348102724" duration="1225000" />
       <workItem from="1527142939858" duration="23138000" />
-      <workItem from="1529555512509" duration="4419000" />
+      <workItem from="1529555512509" duration="7319000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestGetGists_in_gists_test_go - 2018.06.21 at 15h 52m 57s.xml">
-      <configuration name="TestGetGists in gists_test.go" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestGetGist2_in_gists_test_go - 2018.06.21 at 16h 54m 44s.xml">
+      <configuration name="TestGetGist2 in gists_test.go" configurationId="GoTestRunConfiguration" />
     </history-entry>
     <history-entry file="TestGetGists_in_gists_test_go - 2018.06.21 at 15h 53m 09s.xml">
       <configuration name="TestGetGists in gists_test.go" configurationId="GoTestRunConfiguration" />
@@ -390,7 +423,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80967000" />
+    <option name="totallyTimeSpent" value="83867000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="2537" extended-state="6" />
@@ -403,7 +436,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32923833" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32923833" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="1.0" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -435,20 +468,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/30-closing-channels.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="40" column="48" lean-forward="false" selection-start-line="40" selection-start-column="48" selection-end-line="40" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/31-range-over-channels.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="51" lean-forward="false" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/32-timers.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -823,8 +842,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/100-mock/gists_test.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="14" lean-forward="false" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="14" />
+        <state relative-caret-position="340">
+          <caret line="20" column="17" lean-forward="true" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
           <folding>
             <element signature="e#18#56#0" expanded="true" />
           </folding>
@@ -833,10 +852,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/100-mock/gists.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="43" column="29" lean-forward="false" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="29" />
+        <state relative-caret-position="306">
+          <caret line="18" column="5" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="18" selection-end-column="5" />
           <folding>
             <element signature="e#18#79#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/101-mock-interface-example-dummydoer/gists_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <element signature="e#46#85#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/101-mock-interface-example-dummydoer/gists.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="4" lean-forward="false" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+          <folding>
+            <element signature="e#46#107#0" expanded="true" />
           </folding>
         </state>
       </provider>
