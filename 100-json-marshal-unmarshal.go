@@ -6,9 +6,9 @@ import (
 )
 
 type User struct {
-	Name string `json:"name,omitempty""`
-	Age  int    `json:"age,omitempty""`
-	Job  string `json:"job,omitempty""`
+	Name string `json:"name,omitempty"`
+	Age  int    `json:"age,omitempty"`
+	Job  string `json:"job,omitempty"`
 }
 
 func main() {
