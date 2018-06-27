@@ -15,6 +15,7 @@ type Gist struct {
 // DoerはGistsのAPIにリクエストするインターフェース
 type Doer interface {
 	doGistRequest(user string) (io.Reader, error)
+	//doGistRequest2(user string) (io.Reader, error)
 }
 
 // ClientはGistのListを扱うためのクライアント実装
